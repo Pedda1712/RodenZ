@@ -1,0 +1,33 @@
+[project]
+name = "RZTrainDLC"
+version = "0.1.0"
+authors = [
+  { name="Sandro Paval", email="sandro.paval@study.thws.de" },
+]
+description = "CLI Pipeline for training a DLC keypoint detection model."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux"
+]
+license-files = ["LICEN[CS]E*"]
+dependencies = [
+    "deeplabcut>=3.0.0rc1",
+    "RZTrainingPipeline"
+]
+
+[project.urls]
+Homepage = "https://github.com/thws-mai/PM25_Mice"
+Issues = "https://github.com/thws-mai/PM25_Mice/issues"
+
+[project.scripts]
+rztrain = "RZTrainDLC.__main__:main"
+rzinfer = "RZTrainDLC.inference:main"
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true

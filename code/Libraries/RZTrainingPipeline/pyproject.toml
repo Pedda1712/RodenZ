@@ -1,0 +1,25 @@
+[project]
+name = "RZTrainingPipeline"
+version = "0.1.0"
+authors = [
+  { name="Sandro Paval", email="sandro.paval@study.thws.de" },
+]
+description = "Utility functions for the DLC API wrapper."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux"
+]
+license-files = ["LICEN[CS]E*"]
+dependencies = [
+      "PyYAML",
+]
+
+[project.urls]
+Homepage = "https://github.com/thws-mai/PM25_Mice"
+Issues = "https://github.com/thws-mai/PM25_Mice/issues"
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"

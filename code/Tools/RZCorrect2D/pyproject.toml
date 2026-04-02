@@ -1,0 +1,30 @@
+[project]
+name = "RZCorrect2D"
+version = "0.1.0"
+authors = [
+  { name="Peter Preinesberger", email="peter.preinesberger@study.thws.de" },
+]
+description = "A tool for removing radial distortion from 2D keypoints. Provided a CSV of DLC output and a camera parameters file, this tool will output a corrected CSV."
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux"
+]
+license-files = ["LICEN[CS]E*"]
+dependencies = [
+  "numpy",
+  "pandas",
+  "opencv-python"
+]
+
+[project.scripts]
+rzcorrect2D = "RZCorrect2D.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/thws-mai/PM25_Mice"
+Issues = "https://github.com/thws-mai/PM25_Mice/issues"
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"

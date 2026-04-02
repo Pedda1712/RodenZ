@@ -1,0 +1,31 @@
+[project]
+name = "RZView3DCSV"
+version = "0.1.0"
+authors = [
+  { name="Peter Preinesberger", email="peter.preinesberger@study.thws.de" },
+]
+description = "A tool for displaying reconstructed trajectories with OpenGL."
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux"
+]
+license-files = ["LICEN[CS]E*"]
+dependencies = [
+  "RZVisuals",
+  "numpy",
+  "pandas"
+]
+
+[project.scripts]
+rzview3Dcsv = "RZView3DCSV.__main__:main"
+
+
+[project.urls]
+Homepage = "https://github.com/thws-mai/PM25_Mice"
+Issues = "https://github.com/thws-mai/PM25_Mice/issues"
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"

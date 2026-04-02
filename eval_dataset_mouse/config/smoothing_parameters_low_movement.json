@@ -1,0 +1,14 @@
+{
+    "base_point_prior_variance": 30,
+    "base_point_prior_velocity_variance": 10,
+    "skeletal_point_prior_variance": 4, 
+    "skeletal_point_prior_velocity_variance": 4,
+    "camera_prior_variance": 2, 
+    "camera_transition_variance": 0.00,
+    "base_point_velocity_variance": 1,
+    "skeletal_point_velocity_variance": 1,
+    "high_likelihood_threshold_variance": [0.8, 1],
+    "medium_likelihood_threshold_variance": [0.6, 6],
+    "low_likelihood_threshold_variance": [0.5, 640],
+    "camera_cage": 10
+}

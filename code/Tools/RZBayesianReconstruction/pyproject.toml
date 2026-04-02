@@ -1,0 +1,36 @@
+[project]
+name = "RZBayesianReconstruction"
+version = "0.1.0"
+authors = [
+  { name="Peter Preinesberger", email="peter.preinesberger@study.thws.de" },
+]
+description = "CLI Tool for triangulation of mice keypoints using Bayesian Smoothing."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux"
+]
+license-files = ["LICEN[CS]E*"]
+dependencies = [
+  "numpy",
+  "pandas",
+  "tqdm",
+  "jax",
+  "opencv-python",
+  "toml"
+]
+
+[project.urls]
+Homepage = "https://github.com/thws-mai/PM25_Mice"
+Issues = "https://github.com/thws-mai/PM25_Mice/issues"
+
+[project.scripts]
+rzbayesianreconstruction = "RZBayesianReconstruction.__main__:main"
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true

@@ -1,0 +1,10 @@
+{
+	"camera_dist": 39.18400000000042, 
+	"camera_pitch": -88.23999999999911, 
+	"camera_yaw": -89.41000000000004, 
+	"camera_fov": 53, 
+	"camera_fine_pitch": -1.0399999999999956, 
+	"camera_fine_yaw": -1.1900000000000022, 
+	"distortion": {"k1": -0.2687, "k2": 0.0125, "p1": 0, "p2": 0, "k3": 0},    
+	"resolution": {"x": 640, "y": 480}    
+}
